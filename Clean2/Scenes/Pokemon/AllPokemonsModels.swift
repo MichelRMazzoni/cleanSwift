@@ -10,14 +10,12 @@ import UIKit
 
 enum AllPokemons {
 
-    
-    enum List {
+    enum GetAllPokemons {
         struct Request {
             
         }
         
         struct Response {
-            
             struct Success {
                 let pokemonList: [Pokemon]
             }
@@ -25,7 +23,6 @@ enum AllPokemons {
             struct Failure {
                 let error: Error
             }
-            
         }
         
         struct ViewModel {

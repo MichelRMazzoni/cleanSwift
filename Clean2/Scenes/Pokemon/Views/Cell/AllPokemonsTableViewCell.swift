@@ -1,15 +1,14 @@
 //
-//  TitleGetItemsTableViewCell.swift
+//  AllPokemonsTableViewCell.swift
 //  Clean2
 //
-//  Created by Michel Mazzoni on 25/10/18.
+//  Created by Michel Mazzoni on 31/10/18.
 //  Copyright © 2018 Michel Mazzoni. All rights reserved.
 //
 
 import UIKit
 
-// esse nome ficou meio confuso, poderia ser pokemon detail cell
-class TitleGetItemsTableViewCell: UITableViewCell {
+class AllPokemonsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lblTitle: UILabel!
     
@@ -23,5 +22,5 @@ class TitleGetItemsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

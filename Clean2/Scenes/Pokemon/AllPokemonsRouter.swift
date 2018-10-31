@@ -23,10 +23,22 @@ class AllPokemonsRouter: NSObject, AllPokemonsRoutingLogic, AllPokemonsDataPassi
     var dataStore: AllPokemonsDataStore?
     
     func routeToShowDetail(segue: UIStoryboardSegue) {
+        //Não é uma boa prática forçar cast, se o projeto usar lint vai dar erro de compilação
+        
         let destinationVC = segue.destination as! DetailsViewController
         let indexPokemon = viewController?.tableView.indexPathForSelectedRow?.row
+         var destinationDS = destinationVC.router!.dataStore!
+        
+        //O certo seria pegar o do datastore da cena e passar o parametro selecionado para a próxima view
+        //        guard let datastore = dataStore, let row = viewController?.tableView.indexPathForSelectedRow?.row else {
+        //            return
+        //        }
+        //        destinationDS.pokemon =  dataStore.pokemon[row]
+        
+        // esse jeito de passar dado faz com que aja uma grande chance de dar erro na aplicação
+        // esse caso os pokemons estão ordenados pelos ids deles
+        // mas caso a api mude a aplicação quebra
         let indexTwo = indexPokemon! + 1
-        var destinationDS = destinationVC.router!.dataStore!
         destinationDS.indexPokemon = indexTwo
         
         

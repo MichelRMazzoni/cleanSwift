@@ -16,6 +16,7 @@ protocol DetailsDisplayLogic: class {
 }
 
 extension DetailsViewController: DetailsDisplayLogic {
+    
     func successGetDetails(response: Details.ListDetails.ViewModel.Success) {
         imgPokemon.sd_setImage(with: URL(string: response.items.sprites!), placeholderImage: UIImage(named: "icMore"))
         name.text = "Name: \(String(describing: response.items.name!.uppercased()))"
@@ -29,6 +30,10 @@ extension DetailsViewController: DetailsDisplayLogic {
     }
     
     func failureGetDetails(response: Details.ListDetails.ViewModel.Failure) {
+        let alert = UIAlertController(title: "Poke APi", message: "Verifique sua conexão com a internet", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
         SVProgressHUD.dismiss()
     }
 }

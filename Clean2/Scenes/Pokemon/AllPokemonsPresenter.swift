@@ -9,8 +9,8 @@
 import UIKit
 
 protocol AllPokemonsPresentationLogic {
-    func successGetPokemons(response: AllPokemons.List.Response.Success)
-    func failureGetPokemons(response: AllPokemons.List.Response.Failure)
+    func successGetPokemons(response: AllPokemons.GetAllPokemons.Response.Success)
+    func failureGetPokemons(response: AllPokemons.GetAllPokemons.Response.Failure)
 }
 
 class AllPokemonsPresenter: AllPokemonsPresentationLogic {
@@ -18,21 +18,22 @@ class AllPokemonsPresenter: AllPokemonsPresentationLogic {
     // Var's
     weak var viewController: AllPokemonsDisplayLogic?
     
-    func successGetPokemons(response: AllPokemons.List.Response.Success) {
+    func successGetPokemons(response: AllPokemons.GetAllPokemons.Response.Success) {
         let pokemons = response.pokemonList.compactMap {
-            AllPokemons.List.ViewModel.PokemonsDisplay(
+            AllPokemons.GetAllPokemons.ViewModel.PokemonsDisplay(
                 name: $0.name,
                 url: $0.url
             )
         }
         
-        let vm = AllPokemons.List.ViewModel.Success(items: pokemons)
+        let vm = AllPokemons.GetAllPokemons.ViewModel.Success(items: pokemons)
         viewController?.successGetPokemons(response: vm)
     
     }
     
-    func failureGetPokemons(response: AllPokemons.List.Response.Failure) {
-        
+    func failureGetPokemons(response: AllPokemons.GetAllPokemons.Response.Failure) {
+        let vm = AllPokemons.GetAllPokemons.ViewModel.Failure(message: response.error.localizedDescription)
+        self.viewController?.failureGetPokemons(response: vm)
     }
 
 }

@@ -10,7 +10,7 @@ import UIKit
 import PromiseKit
 
 protocol AllPokemonsBusinessLogic {
-    func getPokemons(request: AllPokemons.List.Request)
+    func getPokemons(request: AllPokemons.GetAllPokemons.Request)
 }
 
 protocol AllPokemonsDataStore {
@@ -25,19 +25,17 @@ class AllPokemonsInteractor: AllPokemonsBusinessLogic, AllPokemonsDataStore {
     
     var pokemon = [Pokemon]()
 
-    func getPokemons(request: AllPokemons.List.Request) {        
+    func getPokemons(request: AllPokemons.GetAllPokemons.Request) {
         worker.getList()
             .done { result in
                 self.pokemon = result
-                let response = AllPokemons.List.Response.Success(pokemonList: result)
+                let response = AllPokemons.GetAllPokemons.Response.Success(pokemonList: result)
                 self.presenter?.successGetPokemons(response: response)
             }
-            .catch { [weak self] (error) in
-                let response = AllPokemons.List.Response.Failure(error: error)
-                self?.presenter?.failureGetPokemons(response: response)
+            .catch { (error) in
+                let response = AllPokemons.GetAllPokemons.Response.Failure(error: error)
+                self.presenter?.failureGetPokemons(response: response)
         }
     }
-    
-    
-    
+
 }

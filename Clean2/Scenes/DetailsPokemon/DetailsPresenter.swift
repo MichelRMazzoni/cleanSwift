@@ -34,7 +34,8 @@ class DetailsPresenter: DetailsPresentationLogic {
     }
     
     func failureDetailsPokemon(response: Details.ListDetails.Response.Failure) {
-        
+        let vm = Details.ListDetails.ViewModel.Failure(message: response.error.localizedDescription)
+        self.viewController?.failureGetDetails(response: vm)
     }
 
 }

@@ -12,10 +12,7 @@ import PromiseKit
 class AllPokemonsWorker {
 
     func getList() -> Promise<[Pokemon]> {
-        print(Webservice.GetAllPokemons.getAllPokemons())
-        
         return Webservice.GetAllPokemons.getAllPokemons()
-        
     }
 
 }

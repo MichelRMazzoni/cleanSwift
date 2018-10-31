@@ -37,12 +37,20 @@ class DetailsViewController: UIViewController {
     // Load
     override func viewDidLoad() {
         super.viewDidLoad()
-        SVProgressHUD.setDefaultAnimationType(.native)
-        SVProgressHUD.show()
         getDetails()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        SVProgressHUD.dismiss()
+    }
+    
+    func showSpinner(){
+        SVProgressHUD.setDefaultAnimationType(.native)
+        SVProgressHUD.show()
+    }
+    
     func getDetails(){
+        showSpinner()
         let request = Details.ListDetails.Request()
         interactor?.getDetail(request: request)
     }

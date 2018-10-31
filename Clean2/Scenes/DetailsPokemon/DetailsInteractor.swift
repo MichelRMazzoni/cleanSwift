@@ -34,9 +34,9 @@ class DetailsInteractor: DetailsBusinessLogic, DetailsDataStore {
                 let response = Details.ListDetails.Response.Success(detailsList: result)
                 self.presenter?.successDetailsPokemon(response: response)
         }
-            .catch { [weak self] (error) in
+            .catch { (error) in
                 let response = Details.ListDetails.Response.Failure(error: error)
-                self?.presenter?.failureDetailsPokemon(response: response)
+                self.presenter?.failureDetailsPokemon(response: response)
                 
         }
     }
