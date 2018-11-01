@@ -11,7 +11,7 @@ import PromiseKit
 
 class DetailsWorker {
     
-    func getDetailsPokemon(indexPokemon: Int) -> Promise<DetailsPokemon> {
+    func getDetailsPokemon(indexPokemon: String) -> Promise<DetailsPokemon> {
         return Webservice.GetDetails.getDetails(indexPokemon: indexPokemon)
     }
 

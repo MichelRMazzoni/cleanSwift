@@ -38,6 +38,12 @@ class AllPokemonsViewController: UIViewController {
         getPokemons()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if let index = self.tableView.indexPathForSelectedRow{
+            self.tableView.deselectRow(at: index, animated: true)
+        }
+    }
+    
     func showSpinner(){
         SVProgressHUD.setDefaultAnimationType(.native)
         SVProgressHUD.show()

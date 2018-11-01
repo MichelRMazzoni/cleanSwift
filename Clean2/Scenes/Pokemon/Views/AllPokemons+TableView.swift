@@ -29,4 +29,5 @@ extension AllPokemonsViewController: UITableViewDataSource, UITableViewDelegate{
         performSegue(withIdentifier: "ShowDetail", sender: nil)
     }
     
+    
 }

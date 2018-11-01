@@ -15,7 +15,7 @@ extension Webservice {
     
     enum DetailsPokemon: AppfyGenericRouterEnum {
         
-        case details(indexPokemon: Int)
+        case details(indexPokemon: String)
         
         var method: HTTPMethod {
             switch self {
@@ -56,12 +56,13 @@ extension Webservice {
 
 extension Webservice.GetDetails {
     
-    static func getDetails(indexPokemon: Int) -> Promise<DetailsPokemon> {
+    static func getDetails(indexPokemon: String) -> Promise<DetailsPokemon> {
         return Promise.init { seal in
             
-            let request = Webservice.DetailsPokemon.details(indexPokemon: indexPokemon)
+            let request = indexPokemon
             
-            Webservice.request(request, completion: { (response) in
+            Alamofire.request(indexPokemon, method: .get).responseJSON(completionHandler: { (response) in
+                
                 guard let statusCode = response.response?.statusCode else {
                     let error = NSError(domain: "DetailsPokemon", code: -1, userInfo: [NSLocalizedDescriptionKey: "Erro ao obter status da resposta com o servidor"])
                     seal.reject(error)

@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Clean2/Scenes/Pokemon/AllPokemonsRouter.swift"
-            timestampString = "562700845.411149"
+            timestampString = "562770068.949849"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -89,7 +89,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Clean2/Scenes/Pokemon/AllPokemonsInteractor.swift"
-            timestampString = "562700845.411572"
+            timestampString = "562770068.949954"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -105,7 +105,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Clean2/Scenes/Pokemon/AllPokemonsInteractor.swift"
-            timestampString = "562700845.411624"
+            timestampString = "562770068.950006"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
@@ -249,7 +249,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Clean2/Scenes/DetailsPokemon/DetailsInteractor.swift"
-            timestampString = "562700845.411791"
+            timestampString = "562770068.95017"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
@@ -327,110 +327,30 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Clean2/Services/WebService/WebService+Details.swift"
-            timestampString = "562700845.411867"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "getDetails(indexPokemon:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Clean2/Services/WebService/WebService+Details.swift"
-            timestampString = "562700845.4119149"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "getDetails(indexPokemon:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Clean2/Services/WebService/WebService+Details.swift"
-            timestampString = "562700845.411957"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "getDetails(indexPokemon:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in closure #1 (PromiseKit.Resolver&lt;Clean2.DetailsPokemon&gt;) -&gt; () in static Clean2.Webservice.GetDetails.getDetails() -&gt; PromiseKit.Promise&lt;Clean2.DetailsPokemon&gt;"
-                  moduleName = "Clean2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michelmazzoni/Downloads/Clean2/Clean2/Services/WebService/WebService+Details.swift"
-                  timestampString = "562536035.915288"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "1978">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in closure #1 (PromiseKit.Resolver&lt;Clean2.DetailsPokemon&gt;) -&gt; () in static Clean2.Webservice.GetDetails.getDetails() -&gt; PromiseKit.Promise&lt;Clean2.DetailsPokemon&gt;"
-                  moduleName = "Clean2"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michelmazzoni/Downloads/Clean2/Clean2/Services/WebService/WebService+Details.swift"
-                  timestampString = "562536035.9191819"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "5362">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Clean2/Scenes/Pokemon/AllPokemonsRouter.swift"
-            timestampString = "562700845.411999"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "routeToShowDetail(segue:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Clean2/Scenes/DetailsPokemon/DetailsInteractor.swift"
-            timestampString = "562700845.412225"
+            timestampString = "562770068.950247"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
             landmarkName = "DetailsDataStore"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Clean2/Scenes/DetailsPokemon/DetailsInteractor.swift"
+            timestampString = "562770068.950292"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "DetailsInteractor"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

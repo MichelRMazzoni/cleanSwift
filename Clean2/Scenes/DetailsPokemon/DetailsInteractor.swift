@@ -15,7 +15,7 @@ protocol DetailsBusinessLogic {
 
 protocol DetailsDataStore {
     var details: DetailsPokemon! { get set }
-    var indexPokemon: Int? { get set }
+    var indexPokemon: String? { get set }
 }
 
 class DetailsInteractor: DetailsBusinessLogic, DetailsDataStore {
@@ -25,7 +25,7 @@ class DetailsInteractor: DetailsBusinessLogic, DetailsDataStore {
     let worker = DetailsWorker()
 
     var details:  DetailsPokemon!
-    var indexPokemon: Int?
+    var indexPokemon: String?
     
     func getDetail(request: Details.ListDetails.Request) {
         worker.getDetailsPokemon(indexPokemon: indexPokemon!)
