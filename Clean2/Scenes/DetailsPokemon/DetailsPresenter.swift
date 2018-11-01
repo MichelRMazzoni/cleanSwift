@@ -20,15 +20,18 @@ class DetailsPresenter: DetailsPresentationLogic {
     
     
     func successDetailsPokemon(response: Details.ListDetails.Response.Success) {
+        let statList = response.detailsList.stats.map { Details.ListDetails.ViewModel.StatsDisplay(name: $0.stat.name, baseAttribute: $0.base_stat) }
+        
         let details = Details.ListDetails.ViewModel.DetailsDisplay(
             id: response.detailsList.id,
             name: response.detailsList.name,
             weight: response.detailsList.weight,
             base_experience: response.detailsList.base_experience,
             height: response.detailsList.height,
-            sprites: response.detailsList.sprites.front_default
+            sprites: response.detailsList.sprites.front_default ?? "",
+            statsList: statList
             )
-        
+
         let vm = Details.ListDetails.ViewModel.Success(items: details)
         viewController?.successGetDetails(response: vm)
     }

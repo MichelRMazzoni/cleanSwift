@@ -28,14 +28,19 @@ enum Details {
         }
         
         struct ViewModel {
+            struct StatsDisplay {
+                let name: String
+                let baseAttribute: Int
+            }
             
             struct DetailsDisplay {
-                let id: Int?
-                let name: String?
-                let weight: Int?
-                let base_experience: Int?
-                let height: Int?
-                let sprites: String?
+                let id: Int
+                let name: String
+                let weight: Int
+                let base_experience: Int
+                let height: Int
+                let sprites: String
+                let statsList: [StatsDisplay]
             }
             
             struct Success {

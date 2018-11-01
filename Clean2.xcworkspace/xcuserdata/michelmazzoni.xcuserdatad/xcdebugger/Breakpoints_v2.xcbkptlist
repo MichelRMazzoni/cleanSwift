@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Clean2/Scenes/Pokemon/AllPokemonsRouter.swift"
-            timestampString = "562770068.949849"
+            timestampString = "562793410.798609"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -249,7 +249,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Clean2/Scenes/DetailsPokemon/DetailsInteractor.swift"
-            timestampString = "562770068.95017"
+            timestampString = "562789388.006839"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
@@ -265,7 +265,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Clean2/Scenes/DetailsPokemon/DetailsRouter.swift"
-            timestampString = "562692527.692638"
+            timestampString = "562785847.349973"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -328,7 +328,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Clean2/Scenes/DetailsPokemon/DetailsInteractor.swift"
-            timestampString = "562770068.950247"
+            timestampString = "562789388.006963"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
@@ -344,13 +344,77 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Clean2/Scenes/DetailsPokemon/DetailsInteractor.swift"
-            timestampString = "562770068.950292"
+            timestampString = "562789388.007013"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
             endingLineNumber = "29"
             landmarkName = "DetailsInteractor"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Clean2/Scenes/DetailsPokemon/Views/DetailsViewController.swift"
+            timestampString = "562793410.7988991"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "DetailsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Clean2.DetailsViewController.imgPokemon.getter : weak Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "Clean2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michelmazzoni/Downloads/Clean2/Clean2/Scenes/DetailsPokemon/Views/DetailsViewController.swift"
+                  timestampString = "562785960.822817"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Clean2.DetailsViewController.imgPokemon.setter : weak Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "Clean2"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/michelmazzoni/Downloads/Clean2/Clean2/Scenes/DetailsPokemon/Views/DetailsViewController.swift"
+                  timestampString = "562785960.824641"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Clean2/Scenes/DetailsPokemon/DetailsPresenter.swift"
+            timestampString = "562793410.798982"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "successDetailsPokemon(response:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
